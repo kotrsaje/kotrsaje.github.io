@@ -1,122 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<title>Kotryna Sajeviciute</title>
+<link rel="shortcut icon" src="data/899.png" />
+<link rel="icon" href="data/899.png" />
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-    p {
-        text-align: center;
-        font-size: 60px;
-        color: white;
-        font-family: "Rockwell";
-        margin: 0px;
-        padding: 0px;
-}
-    
-body {
-    
-    background-color: black;
-    
-    margin: 0px;
-    border: 0px;
-    
+body, html {
+    height: 100%;
+    margin: 0;
+        background-image: url("data/0.jpg");
 
-}
-    
+    /* Full height */
+    height: 100%; 
 
-    #topLogo {
-        background-image: url(top.png);
-        width: 90%;
-        height: 200px;
-        background-size: 100% auto  ;
-        background-repeat: no-repeat;
-        background-position: center center;
-        margin: 100px auto 0px auto;
-        max-width: 600px;
-        
-    }
-    
-    #email {
-        background-image: url(email.png);
-        width: 200px;
-        height: 50px;
-        background-size: 100% auto;
-        background-repeat: no-repeat;
-        background-position: center center;
-        margin-left: -100px;
-        position: absolute;
-        bottom: 10px;
-        left: 50%;
-        
-    }
-    
-    #demo_container {
-        position: fixed;
-        width: 100%;
-        height: 50px;
-        top:50%;
-        margin-top: -25px;
-    }
-    
-    @media screen and (max-height : 700px) {        
-        #topLogo {
-            margin-top: 0px;
-        }
-    }
-
-h1 {
-    text-align: center;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat:repeat;
+    background-size: cover;
 }
+
 
 </style>
+
 </head>
 <body>
-    
-    <div id="topLogo"></div>
-    
-    <div id="demo_container">
-        <p id="demo"></p>
-    </div>
-    
-    <div id="email"></div>
-    
 
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("June 5, 2018 16:00:00").getTime();
 
-// Update the count down every 1 second
-var x = setInterval(function() {
+<!-- !PAGE CONTENT! -->
 
-    // Get todays date and time
-    var now = new Date().getTime();
-    
-    // Find the distance between now an the count down date
-    var distance = countDownDate - now;
-    
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-    // Output the result in an element with id="demo"
-    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";
-    
-    // If the count down is over, write some text 
-    if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("demo").innerHTML = "EXPIRED";
-    }
-}, 1000);
-    
-    
+<!-- Header -->
+
+<header >
+
+    <div class="w3-content" style="max-width:1500px">
+
+  <h1 class="w3-opacity" style="text-align: center">Kotryna Sajevičiūtė</h1>
   
-</script>
+    <div style="margin-bottom: 20px;text-align: center">
+<!--      <a href="#" class="w3-bar-item w3-button w3-light-grey">FREEDOM, the irony</a>-->
+        <a href="comp.html" class="w3-panel= w3-opacity button">Computational Arts</a>
+              <a href="pho.html" class="w3-panel= w3-opacity button">Life in film</a>
+      <a href="contact.html" class="w3-panel= w3-opacity button">Contact</a>
 
+
+    </div>
+     
+
+</div>
+</header>
 
 
 </body>
 </html>
-

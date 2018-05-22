@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Kotryna Sajeviciute</title>
+<link rel="shortcut icon" src="data/899.png" />
+<link rel="icon" href="data/899.png" />
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+<header class="w3-panel w3-center " style="padding:0px 100px">
+  <h1 class="w3-xlarge w3-opacity">DIGITAL ARTIST</h1>
+  <h1 class="w3-opacity" style="margin-bottom: 20px">Kotryna Sajevičiūtė</h1>
+  
+    <div class="test">
+<!--      <a href="#" class="w3-bar-item w3-button w3-light-grey">FREEDOM, the irony</a>-->
+                <a href="index.html" class="w3-panel= w3-opacity button">Main</a>
+
+        <a href="comp.html" class="w3-panel= w3-opacity button">Computational Arts</a>
+              <a href="pho.html" class="w3-panel= w3-opacity button">Life in film</a>
+      <a href="contact.html" class="w3-panel= w3-opacity button">Contact</a>
+            <div style = "margin-top: 20px; margin-bottom:-30px; border-bottom: 1px solid lightgray"></div>
+
+    </div>
+
+    <div class="w3-content" style="max-width:800px; margin-bottom: 20px">
+                        <a class="w3-opacity button" style="font-size: 30px">Computational Arts</a>
+</div>
+    <div class="w3-content" style="max-width:800px; margin-bottom: 5px">
+        <a href="freedom.html" class="w3-opacity button"  >FREEDOM, the irony, 2018</a></div>
+        <div class="w3-content" style="max-width:800px; margin-bottom: 5px">
+        <a href="being.html" class="w3-opacity button"  >being, 2017</a></div>
+        <div class="column">
+
+  </div>
+
+</header>
+
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large" style="margin-top: 280px"> 
+   <a href="https://www.instagram.com/vingioparkas/" target="_blank" >
+       <i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/in/kotryna-sajeviciute-078330a3" target="_blank" >
+        <i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    
+</footer>
+
+</body>
+</html>

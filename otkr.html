@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Kotryna Sajeviciute</title>
+<link rel="shortcut icon" src="data/899.png" />
+<link rel="icon" href="data/899.png" />
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+<header class="w3-panel w3-center " style="padding:0px 100px">
+  <h1 class="w3-xlarge w3-opacity">DIGITAL ARTIST</h1>
+  <h1 class="w3-opacity" style="margin-bottom: 20px">Kotryna Sajevičiūtė</h1>
+  
+    <div class="test">
+<!--      <a href="#" class="w3-bar-item w3-button w3-light-grey">FREEDOM, the irony</a>-->
+                        <a href="index.html" class="w3-panel= w3-opacity button">Main</a>
+
+        <a href="comp.html" class="w3-panel= w3-opacity button">Computational Arts</a>
+              <a href="pho.html" class="w3-panel= w3-opacity button">Life in film</a>
+      <a href="contact.html" class="w3-panel= w3-opacity button">Contact</a>
+            <div style = "margin-top: 20px; margin-bottom:-30px; border-bottom: 1px solid lightgray"></div>
+
+    </div>
+<div class="photoMan">
+    <a href="cig.html" class="w3-opacity button" >light me</a>
+    <a href="back.html" class="w3-opacity button" >in the backyard</a>
+    <a href="velvet.html" class="w3-opacity button" >velvet skin</a>
+            <a href="otkr.html" class="w3-opacity button" >otkrytka</a>
+        <a href="face.html" class="w3-opacity button" >visage</a>
+
+</div>
+
+<div class="sliders">
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <div class="w3-opacity" style="color:black; font-size: 20px; margin-bottom:5px">otkrytka</div>
+<!--
+    
+        <div class="w3-opacity" style="color:black; font-size: 15px; margin-bottom:20px">
+when you say - look back <br>
+fuck off and let me live now <br>
+forgetting the past </div>
+-->
+
+    </div>
+    <div class="w3-content" style="max-width:800px">
+<div class="w3-container w3-center" style="margin-top: 5px"> 
+
+
+
+    <div class="mySlides">
+      <img src="data/otkrytka/1.jpg" style="width:100% ; height 500px">
+    </div>
+
+    <div class="mySlides">
+      <img src="data/otkrytka/2.JPG" style="width:100%; max-height: auto">
+    </div>
+    
+    <div class="mySlides">
+      <img src="data/otkrytka/3.JPG" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+    <img src="data/otkrytka/4.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="data/otkrytka/5.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="data/otkrytka/7.jpg" style="width:100%; max-height: auto">
+    </div>
+    
+    <div class="mySlides">
+      <img src="data/otkrytka/8.jpg" style="width:100%">
+    </div>
+        
+    <div class="mySlides">
+      <img src="data/otkrytka/9.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="data/otkrytka/10.jpg" style="width:100%; max-height: auto">
+    </div>
+    
+        <div class="mySlides">
+      <img src="data/otkrytka/11.JPG" style="width:100%; max-height: auto">
+    </div>
+    
+        <div class="mySlides">
+      <img src="data/otkrytka/12.jpg" style="width:100%; max-height: auto">
+    </div>
+</div>
+
+
+
+        <div class="column">
+
+  </div>
+</div>
+</header>
+
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large" style="margin-top: 100px"> 
+   <a href="https://www.instagram.com/vingioparkas/" target="_blank" >
+       <i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/in/kotryna-sajeviciute-078330a3" target="_blank" >
+        <i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    
+</footer>
+
+</body>
+</html>
